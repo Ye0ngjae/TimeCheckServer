@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  time-checker:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: time-checker
+    ports:
+      - "9002:5000"
